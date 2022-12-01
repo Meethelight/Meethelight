@@ -3,23 +3,48 @@
   padding: 0;
   margin: 0;
   font-family: 'IBM Plex Sans', sans-serif;
-  ;
+  color: black;
 }
 
-/* Header section */
+.button {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #000000;
+  box-sizing: border-box;
+  height: 100%;
+  text-decoration: none;
+  border-radius: 0.45rem;
+  padding: 0.3em 0.6em;
+}
+
+.button:hover {
+  transition: ease 0.3s;
+  background-color: #A7C5EB;
+}
+
+/* Header configuration */
 
 header {
-  /*background-color: #F9F9F9;*/
-  height: 8vh;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: content-box;
+  height: 6vh;
   padding: 3vh 0;
 }
 
+#c-header-buttons {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+#c-header-buttons p {
+  margin: 0.3rem;
+}
+
 #logo-header img {
-  max-width: 70px;
+  max-width: 65px;
   margin: 10px;
 }
 
@@ -45,21 +70,6 @@ header > div {
   margin: 0 1vw;
 }
 
-.header-button {
-  color: #000000;
-  font-size: 1.2rem;
-  padding: 0.3em 0.6em;
-  margin: 0.3em;
-  border-radius: 7px;
-  text-decoration: none;
-  border: solid #A7C5EB 0.2em;
-}
-
-.header-button:hover {
-  transition: ease 0.3s;
-  background-color: #A7C5EB;
-}
-
 #login-button {
   border: solid #A7C5EB 0.2em;
 }
@@ -72,6 +82,7 @@ header > div {
 
 #register-button {
   background-color: #A7C5EB;
+  border: solid #A7C5EB 0.2em;
   color: #000000;
 }
 
@@ -81,20 +92,50 @@ header > div {
   color: white;
 }
 
+/* Content configuration*/
+#first-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0 6vw;
+  height: 80vh;
+
+  background-color: #A7C5EB;
+}
+
+#first-section p {
+  padding: 1.5rem 0.4rem;
+}
+
+#overview-button {
+  padding: 0.7em 0.8em;
+  text-align: center;
+  background-color: white;
+  text-decoration: none;
+}
+
+#overview-button:hover {
+  background-color: #3b7dd3;
+  color: white;
+}
+
 /* Footer configuration */
 
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100vw;
+  width: 100%;
+  height: 10vh;
   font-size: 1rem;
-  padding: 5vh 0;
   display: flex;
   justify-content: space-between;
 }
 
 footer > div {
-  margin: 0 2.5vw;
+  margin: 0 2.5em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 1em;
 }
 
 footer a {
@@ -107,6 +148,6 @@ footer a:hover {
   text-decoration: underline;
 }
 
-footer :nth-child(2) b {
+footer :nth-child(2) strong {
   padding: 0 1.5vw;
 }
