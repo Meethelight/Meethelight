@@ -1,0 +1,23 @@
+/* General settings */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: black;
+}
+
+.button {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #000000;
+  box-sizing: border-box;
+  height: 100%;
+  text-decoration: none;
+  border-radius: 0.45rem;
+  padding: 0.3em 0.6em;
+}
+
+.button:hover {
+  transition: ease 0.3s;
+  background-color: #A7C5EB;
+}
