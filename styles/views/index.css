@@ -40,12 +40,6 @@ header h1 {
 
 /* Navbar configuration */
 
-nav.open #menu-items {
-  display: flex;
-  opacity: 1;
-  visibility: visible;
-}
-
 nav {
   display: flex;
   align-items: center;
@@ -53,13 +47,9 @@ nav {
   height: 60px;
 }
 
-.burger {
-  display: none;
-}
+.burger { display: none; }
 
-.burger:hover {
-  cursor: pointer;
-}
+.burger:hover { cursor: pointer; }
 
 .burger:active {
   -moz-transform: scale(.9);
@@ -70,14 +60,11 @@ nav {
 }
 
 #menu-items {
-  overflow: hidden;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1;
   -moz-transition: all ease 500ms;
   -webkit-transition: all ease 500ms;
   -o-transition: all ease 500ms;
   -ms-transition: all ease 500ms;
+  transition: all ease 500ms;
   transition: all ease 500ms;
   background-color: var(--white);
 }
@@ -148,6 +135,13 @@ nav a:active {
 #register-button:hover {
   background-color: var(--bahama-blue);
 }
+
+nav.open #menu-items {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
 
 /* Content configuration*/
 #first-section {
@@ -232,12 +226,13 @@ footer a:hover {
     padding: 0.3rem 1rem;
   }
   #menu-items {
-    display: none;
     width: 100%;
-    flex-direction: column;
     position: absolute;
     top: 8vh;
     left: 0;
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
     padding: 0.8rem 0;
   }
   .burger { display: inline-block; }
@@ -248,9 +243,7 @@ footer a:hover {
  * 480px - 768px
  * 768px - 1024px
  */
-@media screen and (min-width: 480px) {
-
-}
+@media screen and (min-width: 480px) { }
 
 @media screen and (min-width: 768px) {
   .button {
