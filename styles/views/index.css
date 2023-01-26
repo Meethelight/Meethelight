@@ -142,10 +142,6 @@ header h1 {
   font-size: 1.2em;
 }
 
-header > div {
-  margin: 0 1vw;
-}
-
 #login-button {
   border: solid #A7C5EB 0.2em;
   border: solid #3b7dd3 0.2em;
