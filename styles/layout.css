@@ -9,6 +9,13 @@
   --yellow: #FCC037;
   --baby-blue: #A7C5EB;
   --black: #272626;
+  --pure-black: black;
+  /* ui.ux.palette */
+  --botticelli: #CEE1E8;
+  --cerulean: #0D9FBE;
+  --monte-carlo: #7EC5D4;
+  --christine: #E75A0D;
+  --bahama-blue: #005794;
 }
 * {
   padding: 0;
@@ -22,13 +29,55 @@
   font-weight: 500;
   color: var(--black);
   box-sizing: border-box;
-  height: 100%;
   text-decoration: none;
   border-radius: 0.45rem;
   padding: 0.3em 0.6em;
 }
 
+.sm-btn {
+  width: 32px;
+}
+
+.md-btn {
+  width: 44px;
+}
+
+.bg-btn {
+  width: 52px;
+}
+
 .button:hover {
   transition: ease 0.3s;
   background-color: var(--light-blue);
+}
+
+/*
+ * Mobile Configuration
+ * Until 480px
+ * Small mobile: 320px
+ * Medium mobile: 375px
+ * Large mobile: 425px
+ */
+
+
+/*
+ * Tablet Configuration
+ * 480px - 768px
+ * 768px - 1024px
+ */
+
+  /* .button 44px */
+@media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 768px) {
+}
+  
+/*
+ * Laptop Configuration
+ * 1024px - 1280px
+ * 1280px - 1440px
+ */
+@media screen and (min-width: 1024px) {
+}
+@media screen and (min-width: 1280px) {
 }

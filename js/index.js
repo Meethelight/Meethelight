@@ -1,13 +1,13 @@
+const header = document.getElementById('header')
+
 window.onscroll = function () {
   let isScrolled = false
-  const header = document.getElementById('header')
-
   function onScroll () {
-    if ( window.pageYOffset > 50 ) {
+    if (window.pageYOffset > 50 ) {
       isScrolled = true
       header.classList.add('header-active')
     } else {
-      header.classList.remove('header-active')
+      header.classList.add('header-active')
     }
   }
   
@@ -38,3 +38,13 @@ for_enterprise.addEventListener('click',() => {
   })})
 
 //for_you.addEventListener('click',() => { window.scrollTo(0, start.offsetTop - for_you.offsetHeight)})
+
+document.getElementById('menu-btn').addEventListener('click',() => { 
+  document.getElementById('navbar').classList.toggle('open')
+  if (document.body.classList.contains('open') && ! header.classList.contains('header-active')){
+    header.classList.add('header-active')
+  }
+  else if (! document.body.classList.contains('open')) {
+    if (window.pageYOffset <= 50) header.classList.add('header-active')
+  }
+})
