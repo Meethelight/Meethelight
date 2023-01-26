@@ -25,30 +25,16 @@
 }
 
 .button {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 500;
   color: var(--black);
   box-sizing: border-box;
   text-decoration: none;
   border-radius: 0.45rem;
-  padding: 0.3em 0.6em;
-}
-
-.sm-btn {
-  width: 32px;
-}
-
-.md-btn {
-  width: 44px;
-}
-
-.bg-btn {
-  width: 52px;
 }
 
 .button:hover {
   transition: ease 0.3s;
-  background-color: var(--light-blue);
 }
 
 /*
