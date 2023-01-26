@@ -1,4 +1,15 @@
 /* General settings */
+:root {
+  --white: #FBFBFB;
+  --lighter-green: #6BBD99;
+  --light-blue: #75E2FF;
+  --dark-blue: #5689C0;
+  --darker-blue: #424369;
+  --marine-green: #244F62;
+  --yellow: #FCC037;
+  --baby-blue: #A7C5EB;
+  --black: #272626;
+}
 * {
   padding: 0;
   margin: 0;
@@ -9,7 +20,7 @@
 .button {
   font-size: 0.8rem;
   font-weight: 500;
-  color: #000000;
+  color: var(--black);
   box-sizing: border-box;
   height: 100%;
   text-decoration: none;
@@ -19,5 +30,5 @@
 
 .button:hover {
   transition: ease 0.3s;
-  background-color: #A7C5EB;
+  background-color: var(--light-blue);
 }

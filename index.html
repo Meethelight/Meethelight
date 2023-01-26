@@ -22,12 +22,23 @@
     <div>
       <a id="logo-header" href="#meethelight"><img id="img-logo" src="img/logo.png" alt="Meethelight logo"><h1>Meethelight</h1></a>
     </div>
-    <nav id="c-header-buttons">
-      <p id="to-section-for-you" class="header-link">Para ti</p>
-      <p id="to-section-for-professional" class="header-link">Para psicologos</p>
-      <p id="to-section-for-enterprise" class="header-link">Para empresas</p>
-      <a id="login-button" class="button" href="#Explore">Inicia sesión</a>
-      <a id="register-button" class="button" href="#Support">Regístrate</a>
+    <nav id="navbar">
+      <img
+        onclick="document.body.classList.toggle('open')"
+        class="burger"
+        src="https://img.icons8.com/ios-filled/30/null/menu-rounded.png"
+      />
+      <div class="menu-items">
+        <div class="menu menu-left">
+          <a id="to-section-for-you" class="header-link">Para ti</a>
+          <a id="to-section-for-professional" class="header-link">Para psicologos</a>
+          <a id="to-section-for-enterprise" class="header-link">Para empresas</a>
+        </div>
+        <div class="menu menu-right">
+          <a id="login-button" class="button" href="#Explore">Inicia sesión</a>
+          <a id="register-button" class="button" href="#Support">Regístrate</a>
+        </div>
+      </div>
     </nav>
   </header>
   <main id="app">
