@@ -237,6 +237,23 @@ footer a:hover {
   .burger { display: inline-block; }
 }
 
+@media only screen and (width <= 767px)  and (-webkit-min-device-pixel-ratio: 3) {
+  header {
+    padding: 0.3rem 1rem;
+  }
+  #menu-items {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    padding: 0.8rem 0;
+  }
+  .burger { display: inline-block; }
+}
+
 /*
  * Tablet Configuration
  * 480px - 768px
