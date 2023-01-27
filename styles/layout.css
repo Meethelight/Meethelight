@@ -24,6 +24,10 @@
   color: black;
 }
 
+body {
+  background-color: var(--white);
+}
+
 .button {
   font-size: 1rem;
   font-weight: 500;
