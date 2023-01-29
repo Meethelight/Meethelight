@@ -46,35 +46,6 @@ nav {
   height: 60px;
 }
 
-button {
-  position: absolute;
-  top: 200px;
-  right: 200px;
-  width: 5rem;
-  height: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  border: 0;
-  background: red;
-}
-button > div {
-  background-color: var(--black);
-  height: 5px;
-  width: 100%;
-  margin: 20px 0;
-  border-radius: 2px;
-  transition: all .5s;
-  transform-origin: left;
-}
-
-button { display: none; }
-
-button:hover div:first-child { transform: rotate(45deg); }
-button:hover div:nth-child(2) { opacity: 0; }
-button:hover  div:last-child { transform: rotate(-45deg); }
-
 .burger { display: none; }
 
 .burger:hover { cursor: pointer; }
@@ -177,14 +148,28 @@ nav.open #menu-items {
   flex-direction: column;
   justify-content: center;
 
-  padding: 0 6vw;
+  padding: 0 8vw;
   height: 100vh;
 
-  background-color: var(--dark-blue);
+  /* background-color: var(--monte-carlo);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='100' height='100' patternUnits='userSpaceOnUse' patternTransform='scale(1.0)'%3E%3Cpath data-color='fill' fill='%23FBFBFB' d='M50 0C22.4 0 0 22.4 0 50c27.6 0 50-22.4 50-50zM0 50c0 27.6 22.4 50 50 50 0-27.6-22.4-50-50-50zM100 50c-27.6 0-50 22.4-50 50 27.6 0 50-22.4 50-50zM100 50c0-27.6-22.4-50-50-50 0 27.6 22.4 50 50 50z'%3E%3C/path%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+
+  background-color: var(--monte-carlo);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Cpath data-color='fill' fill='%23FBFBFB' stroke='%23FBFBFB' stroke-width='4.07' d='M50 0C22.4 0 0 22.4 0 50c27.6 0 50-22.4 50-50zM0 50c0 27.6 22.4 50 50 50 0-27.6-22.4-50-50-50zM100 50c-27.6 0-50 22.4-50 50 27.6 0 50-22.4 50-50zM100 50c0-27.6-22.4-50-50-50 0 27.6 22.4 50 50 50z'%3E%3C/path%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #first-section h1 {
   margin: 0;
+  background-color: var(--white);
+  border-radius: 10px;
+  padding: 1rem;
+  width: fit-content;
 }
 
 #welcome-text {
@@ -196,15 +181,16 @@ nav.open #menu-items {
 
 #first-section > div {
   display: flex;
-  margin: 1.5rem 0;
+  margin: 2rem 0;
 }
 
 #overview-button {
-  padding: 0.7em 0.8em;
+  padding: 1rem 1rem;
   text-align: center;
   background-color: var(--white);
   text-decoration: none;
   font-weight: 530;
+  font-size: 1.1rem;
 }
 
 #overview-button:hover {
@@ -277,7 +263,10 @@ only screen and (width <= 767px) {
     padding: 0.8rem 0;
   }
   .burger { display: inline-block; }
-  button { display: inline-block; }
+
+  #first-section {
+    align-items: center;
+  }
 
   #first-section > h1 {
     text-align: center;
