@@ -183,8 +183,20 @@ nav.open #menu-items {
   background-color: var(--dark-blue);
 }
 
-#first-section p {
-  padding: 1.5rem 0.4rem;
+#first-section h1 {
+  margin: 0;
+}
+
+#welcome-text {
+  display: inline-block;
+  border-bottom: 3px solid;
+  width: 13ch;
+  text-align: left;
+}
+
+#first-section > div {
+  display: flex;
+  margin: 1.5rem 0;
 }
 
 #overview-button {
@@ -249,8 +261,8 @@ footer a:hover {
  * Large mobile: 425px
  */
 
-@media only screen and (width <= 767px), 
-only screen and (device-width <= 767px)  and (-webkit-min-device-pixel-ratio: 3)  {
+@media only screen and (device-width <= 767px)  and (-webkit-min-device-pixel-ratio: 3),
+only screen and (width <= 767px) {
   header {
     padding: 0.3rem 1rem;
   }
@@ -266,6 +278,14 @@ only screen and (device-width <= 767px)  and (-webkit-min-device-pixel-ratio: 3)
   }
   .burger { display: inline-block; }
   button { display: inline-block; }
+
+  #first-section > h1 {
+    text-align: center;
+  }
+
+  #first-section > div {
+    justify-content: center;
+  }
 }
 
 /*
