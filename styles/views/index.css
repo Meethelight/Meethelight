@@ -141,7 +141,6 @@ nav.open #menu-items {
   visibility: visible;
 }
 
-
 /* Content configuration*/
 #first-section {
   display: flex;
@@ -151,13 +150,8 @@ nav.open #menu-items {
   padding: 0 8vw;
   height: 100vh;
 
-  /* background-color: var(--monte-carlo);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='100' height='100' patternUnits='userSpaceOnUse' patternTransform='scale(1.0)'%3E%3Cpath data-color='fill' fill='%23FBFBFB' d='M50 0C22.4 0 0 22.4 0 50c27.6 0 50-22.4 50-50zM0 50c0 27.6 22.4 50 50 50 0-27.6-22.4-50-50-50zM100 50c-27.6 0-50 22.4-50 50 27.6 0 50-22.4 50-50zM100 50c0-27.6-22.4-50-50-50 0 27.6 22.4 50 50 50z'%3E%3C/path%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
-
   background-color: var(--monte-carlo);
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='100' height='100' patternUnits='userSpaceOnUse' patternTransform='scale(1.0)'%3E%3Cpath data-color='fill' fill='%23FBFBFB' d='M50 0C22.4 0 0 22.4 0 50c27.6 0 50-22.4 50-50zM0 50c0 27.6 22.4 50 50 50 0-27.6-22.4-50-50-50zM100 50c-27.6 0-50 22.4-50 50 27.6 0 50-22.4 50-50zM100 50c0-27.6-22.4-50-50-50 0 27.6 22.4 50 50 50z'%3E%3C/path%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E"); */
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='100%25' height='100%25'%3E%3Cdefs%3E%3Cpattern id='p' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Cpath data-color='fill' fill='%23FBFBFB' stroke='%23FBFBFB' stroke-width='4.07' d='M50 0C22.4 0 0 22.4 0 50c27.6 0 50-22.4 50-50zM0 50c0 27.6 22.4 50 50 50 0-27.6-22.4-50-50-50zM100 50c-27.6 0-50 22.4-50 50 27.6 0 50-22.4 50-50zM100 50c0-27.6-22.4-50-50-50 0 27.6 22.4 50 50 50z'%3E%3C/path%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23p)' width='100%25' height='100%25'%3E%3C/rect%3E%3C/svg%3E");
   background-size: cover;
   background-position: center;
@@ -247,29 +241,7 @@ footer a:hover {
  * Medium mobile: 375px
  * Large mobile: 425px
  */
-/* iPhone 11: 1792x828px at 326ppi */
-/* @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) { } */
-/* iPhone 11 Pro: 2436x1125px at 458ppi */
-/* @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) { } */
-/* iPhone 11 Pro Max: 2688x1242px at 458ppi */
-/* @media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) { } */
-/* iPhone 13 mini: 2340x1080 pixels at 476ppi */
-/* @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) { } */
-/* iPhone 13 y 13 Pro: 2532x1170 pixels at 460ppi */
-/* @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) { } */
-/* iPhone 13 Pro Max: 2778x1284 pixels at 458ppi */
-/* @media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) { } */
-/*iPhone 14*/
-/* @media only screen and (width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) { } */
-/*iPhone 14 Pro*/
-/* @media only screen and (width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) { } */
-
-/*iPhone 14 Pro Max*/
-/* @media only screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) { } */
-
-@media only screen and (width <= 767px), only screen and (width <= 767px)  and (-webkit-device-pixel-ratio: 2),
-  only screen and (width <= 767px)  and (-webkit-device-pixel-ratio: 3)
-  {
+@media only screen and (max-width: 767px) {
   header {
     padding: 0.3rem 1rem;
   }
