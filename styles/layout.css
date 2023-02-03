@@ -41,6 +41,15 @@ body {
   transition: ease 0.3s;
 }
 
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /*
  * Mobile Configuration
  * Until 480px

@@ -232,14 +232,20 @@ section h2 {
   background-color: var(--white);
 }
 
-
 #professional-products {
   background-color: var(--cerulean);
+}
+#professional-products .card{
+  background-color: var(--white);
 }
 
 #enterprise-products {
   background-color: var(--bahama-blue);
 }
+#enterprise-products .card{
+  background-color: var(--white);
+}
+
 
 /* Footer configuration */
 
