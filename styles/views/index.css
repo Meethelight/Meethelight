@@ -12,6 +12,7 @@ header {
   padding: 0.3rem 1rem;
   transition: all ease 450ms;
   background-color: var(--white);
+  z-index: 100;
 }
 
 #logo-header {
@@ -142,7 +143,36 @@ nav.open #menu-items {
 }
 
 /* Content configuration*/
-#first-section {
+section { padding: 5rem 2rem; }
+
+section h2 {
+  font-size: 28px;
+  margin: 0 0 2rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card{
+  border-radius: 20px;
+  padding: 1rem;
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 300px;
+  min-height: 350px;
+}
+
+.card h3{
+  font-size: 20px;
+}
+
+#welcome {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,14 +186,30 @@ nav.open #menu-items {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  animation-name: appear;
+  animation-duration: 1500ms;
+  animation-fill-mode: forwards;
 }
 
-#first-section h1 {
+#welcome h1 {
   margin: 0;
   background-color: var(--white);
   border-radius: 10px;
   padding: 1rem;
   width: fit-content;
+  opacity: 0;
+  animation-name: appear;
+  animation-duration: 1500ms;
+  animation-delay: 1000ms;
+  animation-fill-mode: forwards;
+}
+
+#welcome div {
+  opacity: 0;
+  animation-name: appear;
+  animation-duration: 1500ms;
+  animation-delay: 1800ms;
+  animation-fill-mode: forwards;
 }
 
 #welcome-text {
@@ -173,7 +219,7 @@ nav.open #menu-items {
   text-align: left;
 }
 
-#first-section > div {
+#welcome > div {
   display: flex;
   margin: 2rem 0;
 }
@@ -193,31 +239,8 @@ nav.open #menu-items {
   color: var(--white);
 }
 
-section {
+#overview {
   padding: 5rem 4rem;
-}
-section h2 {
-  font-size: 28px;
-  margin: 0 0 2rem;
-}
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-}
-.card{
-  border-radius: 20px;
-  padding: 1rem;
-  box-sizing: border-box;
-  min-width: 200px;
-  max-width: 300px;
-  min-height: 350px;
-}
-.card h3{
-  font-size: 20px;
 }
 
 #overview p {
@@ -311,15 +334,15 @@ footer a:hover {
   }
   .burger { display: inline-block; }
 
-  #first-section {
+  #welcome {
     align-items: center;
   }
 
-  #first-section > h1 {
+  #welcome > h1 {
     text-align: center;
   }
 
-  #first-section > div {
+  #welcome > div {
     justify-content: center;
   }
 }

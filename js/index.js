@@ -58,4 +58,4 @@ async function changeText(){
     await new Promise(r => setTimeout(r, 1000))
   }
 }
-changeText()
+setTimeout(changeText, 3000)
