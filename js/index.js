@@ -59,3 +59,26 @@ async function changeText(){
   }
 }
 setTimeout(changeText, 1200)
+
+const circle_buttons = document.querySelectorAll('.circle')
+circle_buttons.forEach(circle => circle.addEventListener('click', (evt) => { 
+  const circle = evt.target
+  circle.classList.toggle('clicked')
+  if(!circle.matches('.clicked')){
+    circle.classList.add('unclicked')
+  } else {
+    circle.classList.remove('unclicked')
+  }
+  circle.classList.remove('hover')
+}))
+circle_buttons.forEach(circle => circle.addEventListener('mouseenter', (evt) => { 
+  if(!circle.matches('.clicked') && !circle.matches('.unclicked')){
+    evt.target.classList.add('hover')
+  }
+}))
+circle_buttons.forEach(circle => circle.addEventListener('mouseleave', (evt) => { 
+  evt.target.classList.remove('hover')
+  if(circle.matches('.unclicked')){
+    circle.classList.remove('unclicked')
+  }
+}))

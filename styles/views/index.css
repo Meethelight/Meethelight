@@ -191,22 +191,67 @@ section h2 {
 .card-front, .card-back {
   backface-visibility: hidden;
   position: absolute;
-}
-
-.card-back {
-  transform: rotateY(180deg);
+  height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.hexagon {
-  background-color: var(--black);
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  right: 8%;
-  bottom: 1.2rem;
+.card-back {
+  transform: rotateY(180deg);
 }
+
+.circle {
+  position: absolute;
+  right: 7%;
+  bottom: 1.2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: var(--black);
+}
+.circle:before, .circle:after {
+  content: "";
+  border: inherit;
+  position: absolute;
+  border-radius: 3px;
+  height: 15%;
+  width: 65%;
+  background-color: var(--white);
+}
+.circle:before { transform: rotate(90deg); }
+.circle:after { transform: rotate(180deg); }
+.circle.hover {
+  cursor: pointer;
+  animation: focus-circle 4s infinite;
+}
+.circle.clicked { 
+  animation: rotate-circle;
+  animation-duration: 500ms;
+  animation-delay: 250ms;
+  animation-fill-mode: forwards;
+}
+.circle.unclicked { 
+  animation: rotate-reverse-circle;
+  animation-duration: 500ms;
+  animation-delay: 250ms;
+  animation-fill-mode: backwards;
+}
+
+@keyframes focus-circle {
+  0%, 30% { transform: rotate(0); }
+  35% { transform: rotate(-20deg); }
+  40%, 60% { transform: rotate(0); }
+  65% { transform: rotate(-20deg); }
+  70%, 100% { transform: rotate(0); }
+}
+@keyframes rotate-circle { 100% {transform: rotate(-45deg);} }
+@keyframes rotate-reverse-circle { 0%{transform: rotate(-45deg);} 100% {transform: rotate(0deg);} }
 
 #welcome {
   display: flex;
