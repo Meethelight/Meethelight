@@ -64,6 +64,7 @@ const circle_buttons = document.querySelectorAll('.circle')
 circle_buttons.forEach(circle => circle.addEventListener('click', (evt) => { 
   const circle = evt.target
   circle.classList.toggle('clicked')
+  circle.parentElement.classList.toggle('open')
   if(!circle.matches('.clicked')){
     circle.classList.add('unclicked')
   } else {

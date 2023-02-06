@@ -184,7 +184,7 @@ section h2 {
   width: 85%;
 }
 
-.card:hover .card-content {
+.card.open .card-content {
   transform: rotateY(180deg);
 }
 
@@ -244,14 +244,11 @@ section h2 {
 }
 
 @keyframes focus-circle {
-  0%, 30% { transform: rotate(0); }
-  35% { transform: rotate(-20deg); }
-  40%, 60% { transform: rotate(0); }
-  65% { transform: rotate(-20deg); }
-  70%, 100% { transform: rotate(0); }
+  0%, 30%, 40%, 60%, 70%, 100% { transform: rotate(0); }
+  35%, 65% { transform: rotate(-20deg); }
 }
 @keyframes rotate-circle { 100% {transform: rotate(-45deg);} }
-@keyframes rotate-reverse-circle { 0%{transform: rotate(-45deg);} 100% {transform: rotate(0deg);} }
+@keyframes rotate-reverse-circle { 0% {transform: rotate(-45deg);} 100% {transform: rotate(0deg);} }
 
 #welcome {
   display: flex;
