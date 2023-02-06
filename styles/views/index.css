@@ -161,11 +161,14 @@ section h2 {
 
 .card{
   border-radius: 20px;
-  padding: 1rem;
+  padding: 1rem 0;
   box-sizing: border-box;
-  min-width: 200px;
-  max-width: 300px;
-  min-height: 350px;
+  min-width: 320px;
+  max-width: 350px;
+  min-height: 380px;
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .card h3{
@@ -173,12 +176,12 @@ section h2 {
 }
 
 .card-content {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  position: absolute;
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
+  height: 85%;
+  width: 85%;
 }
 
 .card:hover .card-content {
@@ -187,10 +190,22 @@ section h2 {
 
 .card-front, .card-back {
   backface-visibility: hidden;
+  position: absolute;
 }
 
 .card-back {
   transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+}
+
+.hexagon {
+  background-color: var(--black);
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 8%;
+  bottom: 1.2rem;
 }
 
 #welcome {
@@ -254,7 +269,7 @@ section h2 {
   font-weight: 530;
   font-size: 1.1rem;
   animation-name: important;
-  animation-duration: 5000ms;
+  animation-duration: 6000ms;
   animation-delay: 5000ms;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
