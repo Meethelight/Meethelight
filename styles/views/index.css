@@ -184,6 +184,14 @@ section h2 {
   width: 85%;
 }
 
+.card-content a {
+  padding: 8px 14px;
+}
+
+.card-content a:hover {
+  transform: scale(1.1);
+}
+
 .card.open .card-content {
   transform: rotateY(180deg);
 }
@@ -196,7 +204,7 @@ section h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .card-back {
@@ -314,17 +322,14 @@ section h2 {
   font-size: 1.1rem;
   animation-name: important;
   animation-duration: 6000ms;
-  animation-delay: 5000ms;
+  animation-delay: 2000ms;
   animation-iteration-count: infinite;
   animation-fill-mode: forwards;
 }
 
 @keyframes important {
-  0%, 35% { background-color: var(--cerulean); }
-  40% { background-color: var(--darker-blue); }
-  45% { background-color: var(--cerulean); }
-  50% { background-color: var(--darker-blue); }
-  55%, 100% { background-color: var(--cerulean); }
+  0%, 50%, 60%, 70%, 100% { background-color: var(--cerulean); }
+  55%, 65% { background-color: var(--darker-blue); }
 }
 
 #overview-button:hover {
@@ -345,6 +350,11 @@ section h2 {
 
 #personal-products .card{
   background-color: var(--white);
+}
+
+#personal-products .card-content a {
+  background-color: var(--bahama-blue);
+  color: var(--white);
 }
 
 #professional-products {

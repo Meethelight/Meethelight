@@ -83,3 +83,9 @@ circle_buttons.forEach(circle => circle.addEventListener('mouseleave', (evt) => 
     circle.classList.remove('unclicked')
   }
 }))
+
+const buttons = document.querySelectorAll('.button')
+buttons.forEach(circle => circle.addEventListener('mouseleave', (evt) => { 
+  evt.target.classList.add('leave')
+  setTimeout(() => { evt.target.classList.remove('leave')}, 500)
+}))
