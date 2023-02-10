@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meethelight - Welcome to the Revolution of Mentalhealth.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/views/login.css">
+  <link rel="icon" type="image/x-icon" href="img/white-logo.png">
+</head>
+
+<body>
+  <header id="header">
+    <!-- TODO: Añadir animación a menú -->
+    <div>
+      <a id="logo-header"><img id="img-logo" src="img/logo.png" alt="Meethelight logo"><h1>Meethelight</h1></a>
+    </div>
+    <nav id="navbar">
+      <img id="menu-btn" class="burger"
+        src="https://img.icons8.com/ios-filled/25/null/menu-rounded.png"
+      />
+      <div id="menu-items">
+        <div class="menu menu-left">
+          <a id="to-section-for-you" class="button">Para ti</a>
+          <a id="to-section-for-professional" class="button">Psicólogos</a>
+          <a id="to-section-for-enterprise" class="button">Empresas</a>
+        </div>
+        <div class="menu menu-right">
+          <a id="login-button" class="button" href="#">Inicia sesión</a>
+          <a id="register-button" class="button" href="#">Regístrate</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main id="app">
+    <section id="login">
+      <div id="form-container">
+        <h1>Inicia sesión</h1>
+        <form action="">
+          <p>Correo electrónico o nombre de usuario</p>
+          <input type="email">
+          <p>Contraseña</p>
+          <input type="password">
+          <button type="submit" class="button" href="#">Iniciar sesión</button>
+          <p>¿Olvidaste tu contraseña?</p>
+          <a class="button">Crear cuenta nueva</a>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div>
+      <div>
+        <strong><a href="#">About Us</a></strong>
+        <strong><a href="#">Terms</a></strong>
+      </div>
+      <div>
+        <strong><a href="#">FAQ</a></strong>
+        <strong><a href="#">Contact Us</a></strong>
+      </div>
+    </div>
+    <div><strong>&copy; 2022 &nbsp;&nbsp;&nbsp;Made with &hearts; by <a href="">Meethelight Technologies</a></strong></div>
+  </footer>
+  <script src="js/login.js"></script>
+</body>
+</html>
