@@ -71,6 +71,17 @@ body {
   }
 }
 
+.input {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--black);
+  box-sizing: border-box;
+  text-decoration: none;
+  border-radius: 0.45rem;
+  padding: 1rem 1.5rem;
+  border: transparent;
+}
+
 /*
  * Mobile Configuration
  * Until 480px

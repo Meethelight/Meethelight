@@ -293,14 +293,6 @@ section h2 {
   animation-fill-mode: forwards;
 }
 
-#login div {
-  opacity: 0;
-  animation-name: appear;
-  animation-duration: 1200ms;
-  animation-delay: 1000ms;
-  animation-fill-mode: forwards;
-}
-
 #form-container {
   background-color: var(--white);
   padding: 2rem 3rem;
@@ -309,9 +301,20 @@ section h2 {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+
+  opacity: 0;
+  animation-name: appear;
+  animation-duration: 1200ms;
+  animation-delay: 1000ms;
+  animation-fill-mode: forwards;
 }
 
-#overview-button {
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+#submit-button {
   padding: 1rem 1rem;
   text-align: center;
   background-color: var(--cerulean);
@@ -319,16 +322,6 @@ section h2 {
   text-decoration: none;
   font-weight: 530;
   font-size: 1.1rem;
-  animation-name: important;
-  animation-duration: 6000ms;
-  animation-delay: 2000ms;
-  animation-iteration-count: infinite;
-  animation-fill-mode: forwards;
-}
-
-@keyframes important {
-  0%, 50%, 60%, 70%, 100% { background-color: var(--cerulean); }
-  55%, 65% { background-color: var(--darker-blue); }
 }
 
 /* Footer configuration */
