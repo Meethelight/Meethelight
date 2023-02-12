@@ -371,7 +371,6 @@ section h2 {
   background-color: var(--white);
 }
 
-
 /* Footer configuration */
 
 footer {
@@ -380,6 +379,7 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  border: solid 1px red;
 }
 
 footer > div {
@@ -506,8 +506,5 @@ footer a:hover {
  * 1280px - 1440px
  */
 
-@media only screen and (min-width: 1024px) {
-}
-
-@media only screen and (min-width: 1280px) {
-}
+@media only screen and (min-width: 1024px) { }
+@media only screen and (min-width: 1280px) { }
