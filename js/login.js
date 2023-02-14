@@ -18,3 +18,21 @@ buttons.forEach(circle => circle.addEventListener('mouseleave', (evt) => {
   evt.target.classList.add('leave')
   setTimeout(() => { evt.target.classList.remove('leave')}, 500)
 }))
+
+const change_form = $('change-form-button')
+let changed_form = false
+change_form.addEventListener('click', (evt) => {
+  evt.preventDefault()
+  changed_form = !changed_form
+  if (changed_form) {
+    $('submit-button').style.backgroundColor = '#E75A0D';
+    change_form.style.backgroundColor = '#0D9FBE';
+    $('submit-button').textContent = 'Crear cuenta nueva';
+    change_form.textContent = 'Iniciar sesión'
+  } else {
+    $('submit-button').style.backgroundColor = '#0D9FBE';
+    change_form.style.backgroundColor = '#E75A0D';
+    $('submit-button').textContent = 'Iniciar sesión';
+    change_form.textContent = 'Crear cuenta nueva'
+  }
+})

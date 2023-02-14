@@ -210,6 +210,7 @@ form {
   text-decoration: none;
   font-weight: 530;
   font-size: 1.1rem;
+  transition: all 500ms ease-in-out;
 }
 
 #forgot-password, #forgot-password:visited {
@@ -221,7 +222,7 @@ form {
   color: var(--black);
 }
 
-#create-account-button {
+#change-form-button {
   padding: 0.8rem 1rem;
   text-align: center;
   background-color: var(--christine);
@@ -229,6 +230,7 @@ form {
   text-decoration: none;
   font-weight: 530;
   font-size: 1rem;
+  transition: all 500ms ease-in-out;
 }
 
 /* Footer configuration */
