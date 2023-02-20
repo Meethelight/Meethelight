@@ -27,12 +27,13 @@ change_form.addEventListener('click', (evt) => {
   if (changed_form) {
     $('submit-button').style.backgroundColor = '#E75A0D';
     change_form.style.backgroundColor = '#0D9FBE';
-    $('submit-button').textContent = 'Crear cuenta nueva';
+    $('submit-button').textContent = '¡Comencemos!';
     change_form.textContent = 'Iniciar sesión'
   } else {
     $('submit-button').style.backgroundColor = '#0D9FBE';
     change_form.style.backgroundColor = '#E75A0D';
     $('submit-button').textContent = 'Iniciar sesión';
-    change_form.textContent = 'Crear cuenta nueva'
+    change_form.textContent = 'Crea una nueva cuenta'
   }
+  document.querySelector('.login-header').classList.toggle('open');
 })

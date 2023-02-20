@@ -144,6 +144,35 @@ nav.open #menu-items {
 
 /* Content configuration*/
 
+.login-header{
+  border-radius: 20px;
+  padding: 1rem 0;
+  position: relative;
+  height: 30px;
+  width: 100%;
+}
+
+.login-header-content {
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.login-header.open .login-header-content {
+  transform: rotateY(180deg);
+}
+
+.login-header-front, .login-header-back {
+  backface-visibility: hidden;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.login-header-back {
+  transform: rotateY(180deg);
+}
+
 #login {
   display: flex;
   flex-direction: column;
@@ -182,7 +211,6 @@ nav.open #menu-items {
 
 #form-container h1 {
   display: inline-block;
-  margin: 1rem 0.5rem;
   background-color: var(--white);
   border-radius: 10px;
   width: fit-content;
