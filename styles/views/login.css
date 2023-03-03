@@ -302,6 +302,19 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.footer-sections {
+  display: flex;
+  flex-wrap: wrap;
+}
+footer section {
+  width: 30%;
+}
+
+#footer-logo {
+  height: 150px;
+  width: 300px;
+}
+
 /*
  * Mobile Configuration
  * Until 480px
@@ -387,8 +400,6 @@ footer a:hover {
  * 1280px - 1440px
  */
 
-@media only screen and (min-width: 1024px) {
-}
+@media only screen and (min-width: 1024px) { }
 
-@media only screen and (min-width: 1280px) {
-}
+@media only screen and (min-width: 1280px) { }
