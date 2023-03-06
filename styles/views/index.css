@@ -144,6 +144,8 @@ nav.open #menu-items {
 
 /* Content configuration*/
 .home-section { padding: 5rem 2rem; }
+#for-enterprise { color: var(--white); }
+.see-more { color: var(--white); }
 
 section h2 {
   font-size: 28px;
