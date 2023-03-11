@@ -6,10 +6,14 @@ import reportWebVitals from './reportWebVitals'
 
 import './i18n'
 
+import { ThemeProvider } from '@material-tailwind/react'
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
-    <App />
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 )
 
