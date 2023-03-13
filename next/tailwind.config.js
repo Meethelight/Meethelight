@@ -1,20 +1,13 @@
 /** @type {import('tailwindcss').Config} */
-// const withMT = require('@material-tailwind/react/utils/withMT')
-
-// module.exports = withMT({
-//  content: ['./src/**/*.{js,jsx,ts,tsx}'],
-//   theme: {
-//     extend: {}
-//   },
-//   plugins: []
-// })
-
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: [
+    './app/**/*.{js,jsx,ts,tsx}',
+    './components/**/*.{js,jsx,ts,tsx}'
+  ],
   theme: {
     extend: {
       colors: {
-        'cerulean': {
+        cerulean: {
           DEFAULT: '#0D9FBE',
           50: '#8CE4F7',
           100: '#78E0F6',
@@ -66,7 +59,7 @@ module.exports = {
           800: '#14204A',
           900: '#0C102E'
         },
-        'gray': {
+        gray: {
           DEFAULT: '#808080',
           50: '#DCDCDC',
           100: '#D2D2D2',
@@ -79,7 +72,7 @@ module.exports = {
           800: '#2C2C2C',
           900: '#101010'
         },
-        'christine': {
+        christine: {
           DEFAULT: '#E75A0D',
           50: '#FBCBB1',
           100: '#FABE9E',
@@ -92,7 +85,7 @@ module.exports = {
           800: '#481C04',
           900: '#130701'
         },
-        'alabaster': {
+        alabaster: {
           DEFAULT: '#FBFBFB',
           50: '#FFFFFF',
           100: '#FFFFFF',
@@ -104,7 +97,7 @@ module.exports = {
           700: '#C3C3C3',
           800: '#A7A7A7',
           900: '#8B8B8B'
-        },
+        }
       }
     }
   },
