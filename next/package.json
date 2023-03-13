@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "concurrently \"next dev --turbo\" \"tailwindcss --input ./styles/globals.css --output ./styles/output.css --watch\"",
+    "build": "tailwindcss ./styles/globals.css --output ./styles/output.css && next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -32,8 +32,8 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@material-tailwind/react": "1.4.2",
     "autoprefixer": "10.4.14",
+    "concurrently": "7.6.0",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "eslint-config-standard": "17.0.0",

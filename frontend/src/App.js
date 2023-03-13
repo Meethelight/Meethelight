@@ -2,12 +2,9 @@ import logo from './logo.svg'
 import './App.css'
 import Navigation from './components/layout/Navigation'
 import Btn from './components/misc/Btn'
-import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import i18n from './i18n'
 
 function App () {
-  const [locale, setLocale] = useState(i18n.language)
   const { t } = useTranslation()
   return (
     <div className="App">

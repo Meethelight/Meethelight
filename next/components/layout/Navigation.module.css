@@ -1,0 +1,104 @@
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.burger { display: none; }
+
+.burger:hover { cursor: pointer; }
+
+.burger:active {
+  -moz-transform: scale(.9);
+  -webkit-transform: scale(.9);
+  -o-transform: scale(.9);
+  -ms-transform: scale(.9);
+  transform: scale(.9);
+}
+
+#menu-items {
+  -moz-transition: all ease 500ms;
+  -webkit-transition: all ease 500ms;
+  -o-transition: all ease 500ms;
+  -ms-transition: all ease 500ms;
+  transition: all ease 500ms;
+  transition: all ease 500ms;
+  background-color: var(--white);
+}
+
+#menu-items, .menu {
+  display: flex;
+  gap: 16px;
+}
+
+.menu-left {
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-left a:hover {
+  background-color: var(--botticelli);
+  border: solid var(--bahama-blue) 0.1em;
+}
+
+.menu-right { 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: content-box;
+  padding: 5px 12px;
+
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+.header-link:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.header-link:active {
+  -moz-transform: scale(.9);
+  -webkit-transform: scale(.9);
+  -o-transform: scale(.9);
+  -ms-transform: scale(.9);
+  transform: scale(.9);
+}
+
+#login-button {
+  border: solid var(--bahama-blue) 0.2em;
+}
+
+#login-button:hover {
+  background-color: var(--bahama-blue);
+  border: solid var(--bahama-blue) 0.2em;
+  color: var(--white);
+}
+
+#register-button {
+  background-color: var(--bahama-blue);
+  border: solid var(--bahama-blue) 0.2em;
+  color: var(--white);
+}
+
+#register-button:hover {
+  background-color: var(--bahama-blue);
+}
+
+#navbar.open #menu-items {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}

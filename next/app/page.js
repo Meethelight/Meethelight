@@ -1,12 +1,11 @@
 import { Raleway } from 'next/font/google'
-import styles from './page.module.css'
 
-const raleway = Raleway({ subsets: ['latin'], weight: ['600'] })
+const raleway = Raleway({ subsets: ['latin'], weight: ['700'], variable: '--raleway-font' })
 
 export default function Home () {
   return (
-    <main className={styles.main}>
-      <h1 className={raleway.className}>
+    <main>
+      <h1 className='text-5xl font-bold text-cyan-300'>
         Hello world Next.js for Meethelight!
       </h1>
     </main>
