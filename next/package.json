@@ -32,6 +32,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@material-tailwind/react": "1.4.2",
     "autoprefixer": "10.4.14",
     "concurrently": "7.6.0",
     "eslint": "8.36.0",
