@@ -1,5 +1,8 @@
 import Image from 'next/image'
 import styles from './Navigation.module.css'
+import { Pacifico } from 'next/font/google'
+
+const pacifico = Pacifico({ weight: '400', subsets: ['latin'] })
 
 export default function Navigation () {
   const leftLinks = (
@@ -36,10 +39,13 @@ export default function Navigation () {
   )
 
   return (
-    <nav id="navbar">
-      <Image id={styles.menu_btn} width={25} height={25} src={''} alt="menu"/>
-      <div id="menu-items">
-        <div className={`${styles.menu} ${styles.menu_left}`}>{leftLinks}</div>
+    <nav className='flex w-full'>
+      <div className='flex gap-3'>
+        <Image width={25} height={25} src={''} alt="logo"/>
+        <p className={`${pacifico.className} text-5xl`}>Meethelight</p>
+      </div>
+      <div className='flex'>
+        <div className={`${styles.menu} ${styles.menu_left} bg-indigo-500`}>{leftLinks}</div>
         <div className={`${styles.menu} ${styles.menu_right}`}>{rightLinks}</div>
       </div>
     </nav>
